@@ -16,11 +16,17 @@ Answer the following questions for each of the data structures you implemented a
 
 ## Binary Search Tree
 
-1. What is the runtime complexity of `insert`? 
+1. What is the runtime complexity of `insert`?
+
+Approximately **O(log(n))**, assuming the inserted data is relatively balanced. 
 
 2. What is the runtime complexity of `contains`?
 
-3. What is the runtime complexity of `get_max`? 
+Approximately **O(log(n))**, assuming the data is relatively balanced. 
+
+3. What is the runtime complexity of `get_max`?
+
+Approximately **O(log(n))**, assuming the data is relatively balanced. 
 
 ## Heap
 
