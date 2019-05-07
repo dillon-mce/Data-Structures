@@ -19,7 +19,6 @@ class Heap:
       self.storage.pop()
 
     return value
-    
 
   def get_max(self):
     try:
@@ -44,13 +43,15 @@ class Heap:
     child_2_index = 2*index + 2
     if child_1_index >= len(self.storage):
       return
-    child_1 = -1
-    child_2 = -1
-    try:
-      child_1 = self.storage[child_1_index]
-      child_2 = self.storage[child_2_index]
-    except:
-      pass
+    child_1 = self.storage[child_1_index]
+    
+    if child_2_index >= len(self.storage):
+      if child_1 > self.storage[index]:
+        self._swap(index, child_1_index)
+        self._sift_down(child_1_index)
+      return
+    child_2 = self.storage[child_2_index]
+
     if child_1 > self.storage[index] and child_1 > child_2:
       self._swap(index, child_1_index)
       self._sift_down(child_1_index)
