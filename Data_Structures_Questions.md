@@ -32,13 +32,19 @@ Approximately **O(log(n))**, assuming the data is relatively balanced.
 
 1. What is the runtime complexity of `_bubble_up`?
 
+**O(log(n))** Where n is the size of the heap.
+
 2. What is the runtime complexity of `_sift_down`?
+**O(log(n))** Where n is the size of the heap.
 
 3. What is the runtime complexity of `insert`?
+**O(log(n))** Where n is the size of the heap.
 
 4. What is the runtime complexity of `delete`?
+**O(log(n))** Where n is the size of the heap.
 
 5. What is the runtime complexity of `get_max`?
+**O(1)**, it is always the first element.
 
 ## Doubly Linked List
 
