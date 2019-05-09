@@ -95,6 +95,13 @@ class DoublyLinkedList:
     
     node.delete()
     self.length -= 1 if self.length > 0 else 0
+
+  def get_value(self, value):
+    current = self.head
+    while current:
+      if current.value == value:
+        return current
+      current = current.next
     
   def get_max(self):
     if not self.head or not self.tail:

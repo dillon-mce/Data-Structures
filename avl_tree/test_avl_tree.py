@@ -34,7 +34,7 @@ class AVLTreeTests(unittest.TestCase):
     self.tree.node.right.node.right.node.left = AVLTree(Node('y'))
     self.tree.node.right.node.right.node.right = AVLTree(Node('z'))
 
-    self.tree.left_rotate()
+    self.tree._left_rotate()
 
     self.assertEqual(self.tree.node.key, 8)
     self.assertEqual(self.tree.node.left.node.key, 5)
@@ -53,7 +53,7 @@ class AVLTreeTests(unittest.TestCase):
     self.tree.node.left.node.left.node.left = AVLTree(Node('y'))
     self.tree.node.left.node.left.node.right = AVLTree(Node('z'))
 
-    self.tree.right_rotate()
+    self.tree._right_rotate()
 
     self.assertEqual(self.tree.node.key, 4)
     self.assertEqual(self.tree.node.left.node.key, 3)
